@@ -1,20 +1,33 @@
 # Vehicle_Detection_for_Traffic_Safety
-This project detects all types of vehicles and give a warning signal if the vehicle is overspeeding, if motorbike rider is not wearing a helmet, or if more than 2 people ride motorbike, and if cyclist is not holding the handle.
 
-Check it out at: https://www.youtube.com/watch?v=zE-AC-NhYtw&list=LL&index=1&t=2s
+This project uses **YOLOv8** and **DeepSORT** for real-time vehicle detection and tracking.  
+It detects various traffic violations such as:
 
-Steps to Run The Agent from Scratch
+- Detects overspeeding vehicles
+- Detects motorbike riders not wearing helmets
+- Detects more than two people riding a motorbike
+- Detects cyclists not holding the handlebar
+
+The violations are displayed on an **LCD** connected to an **Arduino UNO** via **serial communication**.
+
+### Demo Video
+
+> https://www.youtube.com/watch?v=zE-AC-NhYtw&list=LL&index=1&t=2s
+
+### Steps to Run The Agent from Scratch
 
 1. Install Python:
    - Download and install Python 3.8 or later
 
-2.. Install Required Libraries:
+2. Install Required Libraries:
    - Run the following command:
+   ```
     pip install opencv-python
     pip install numpy
     pip install pyserial
-   pip install ultralytics
-   pip install deep-sort-realtime
+    pip install ultralytics
+    pip install deep-sort-realtime
+   ```
 
 4. Set Up Your Arduino:
    - Open Arduino IDE.
